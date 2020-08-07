@@ -1,0 +1,136 @@
+/*Main CSS Styles*/
+
+/*header and footer styles */
+header, footer {
+  padding:  20px;
+  background-color: #6c757d; 
+  text-align: center;
+}
+
+.hdrftr  {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #dee2e6;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+a.hdrftr:link {color:#dee2e6; }
+a.hdrftr:hover {color:#212529; }
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+/*styles for main section of page*/
+main {
+  background-color: #ced4da;
+  padding: 10% 25%;
+}
+
+h2, h3, h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#495057 ;
+}
+
+h4 { 
+  text-align: right;
+}
+
+p, li, form {
+  color: #212529;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  padding:1%;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+hr {
+  border: .5px solid #6c757d;
+  margin-top: 10%;
+}
+
+/*link styles*/
+section a:link {color: #212529;}
+section a:visited {color: #6c757d;}
+section a:hover {color:#525b64;}
+section a:active {color:#adb5bd;}
+
+
+/*form styles*/
+form {
+  display: block;
+}
+
+fieldset {
+  border: 2px solid #6c757d;
+  padding: 10% 15%;
+  border-radius: 5px;
+}
+
+legend {
+  padding: 1%;
+}
+
+form input,
+form textarea {
+  border: 2px solid #6c757d;
+  margin-bottom: 3%;
+  width: 100%;
+  background-color:  #ebeef1;
+  border-radius: 5px;
+  
+}
+
+button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px; 
+  background-color: #6c757d;
+  border: none;
+  color: #dee2e6;
+}
+
+/*responsive styles (Mobile First)*/
+.group {
+  margin: auto;
+  display: flex;
+  flex-direction: column;  
+}
+
+.item {  
+  flex: 1;
+  margin: auto 10px auto 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: auto 10px auto 10px;
+}
+
+iframe {
+  padding-top:5%;
+  width: 100%;  
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+/*responsive styles (Desktop)*/
+
+@media all and (min-width: 800px) {
+
+  .group {
+    flex-direction: row;
+  }
+
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Amanda's Portfolio Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>    
+
+    <header id="top" class="group"><!-- assigns id to be used in anchor link -->
+      <div class="item">
+        <h1 class="hdrftr">Amanda Alber</h1> 
+      </div>
+      <div class="item">   
+        <!--Use Responsive Navigation-->    
+        <nav class="hdrftr">
+          <ul> <!-- assigns class to be used in styling elements -->
+            <li><a href="#intro" class="hdrftr"><i>Intro</i></a></li> <!-- links to each section below -->
+            <li><a href="#about" class="hdrftr"><i>About</i></a></li>
+            <li><a href="#projects" class="hdrftr"><i>Projects</i></a></li>
+            <li><a href="#contact" class="hdrftr"><i>Contact</i></a></li>
+          </ul>
+        </nav>
+      </div>    
+    </header>  
+
+    <main>          
+      <!-- introduction section -->
+      <section id="intro">
+        <div class="group"> 
+          <div class="item">
+            <img src="images/mandy.jpg" alt="photo of mandy"/> 
+          </div>  
+          <div class="item">
+            <h2>Hi! I'm Amanda Alber</h2>
+            <p>I am an aspiring software developer currently learning at Thinkful Coding Bootcamp. I'm located in Tacoma, Washington (about 40 minutes south of Seattle).</p>
+            <p>As a former accountant and data professional, I enjoy: </p>
+            <ul>
+              <li>Solving problems and puzzles</li>
+              <li>Improving efficiency</li>
+              <li>Automating repetitive tasks</li>
+            </ul>      
+            <p>What can I help you create?</p>   
+          </div>
+        </div>
+        <h4><a href="#top">Back to top</a></h4><!-- this link returns to the top of the screen -->
+      </section>
+         
+      <!-- horizonal rule to break up each section -->
+      <hr>
+
+      <!-- about me section -->
+      <section id="about"> 
+        <div class="group">
+          <div class="item">
+            <h2>About Me</h2>
+            <p>I began my journey into coding when I was looking to find a job that wouldn't leave me watching the clock all day. While I enjoyed my roles as an accounting professional and a data specialist, I was searching for something that would allow me more flexibility, autonomy and the opportunity to continually learn new things.</p>
+            <p>After dabbling online and then taking a few college classes, I was hooked! As a Thinkful student, I am reaping the benefits of collaborating with a mentor and other students to propel me to my next career.</p>      
+            <p><strong>Services I can provide:</strong>I have a Web Programming Certificate that demonstrates my experience with HTML, CSS and JavaScript, as well as exposure to Java, C++, PHP, SQL and Joomla! CMS (Content Management System). I am continually learning new things and look forward to creating quality projects.</p>     
+            <p>Outside of development, I spend my time playing with my two sons, taking long walks outdoors and reading books about self-improvement, psychology and sociology.</p>  
+          </div>
+        </div> 
+        <h4><a href="#top">Back to top</a></h4>
+      </section>       
+    
+    <hr>
+
+      <!-- my projects/portfolio section -->
+      <section id="projects">
+        <div class="group">          
+          <div class ="item">
+            <img src="images/placeholder.png" alt="screenshot"/>
+            <h3>Email Form</h3>
+            <p>This page receives your name, email and a message and sends it through Formspree. </p>
+            <p>Skills used: HTML, CSS</p>
+            <p><a href="https://github.com/mandyalber/email-form-practice">Link to project GitHub repo</a></p>
+            <p><a href="https://mandyalber.github.io/email-form-practice/">Link to live, working app</a></p>
+          </div>
+          <div class ="item">
+            <img src="images/placeholder.png" alt="screenshot"/>
+            <h3>Pizza: Sample Project</h3>
+            <p>This page is a sample project that I used to create my first GitHub Repo</p>
+            <p>Skills used: GitHub</p>
+            <p><a href="https://github.com/mandyalber/pizza">Link to project GitHub repo</a></p>
+            <p><a href="https://mandyalber.github.io/pizza/">Link to live, working app</a></p>
+          </div> 
+          <div class ="item">
+            <img src="images/placeholder.png" alt="screenshot"/>
+            <h3>Quiz App</h3>
+            <p>This app is coming soon, it is a project to demonstrate the skills I have learned so far,</p>
+            <p>Skills used: HTML, CSS & JavaScript</p>
+            <p><a href="#">Link to project GitHub repo</a></p>
+            <p><a href="#">Link to live, working app</a></p>
+          </div>
+        </div> 
+        <h4><a href="#top">Back to top</a></h4>      
+      </section>
+      
+      <hr>
+
+      <!-- contact me and location section -->
+      <section id="contact" > 
+        <div class="group">
+          <div class="item">
+             <!-- functional contact form -->
+            <form action="https://formspree.io/mandy.alber@gmail.com" method="post">
+              <fieldset>
+                <legend>Contact Form</legend>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" required/>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required/>
+                <label for="message">Message:</label>
+                <textarea id="message" name="name" maxlength="500" required></textarea>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+              </fieldset>
+            </form>       
+          </div>          
+          <div class="item ">
+            <h2>Other Ways to Contact Me</h2>
+            <ol>
+              <li><a href="http://www.linkedin.com/in/amanda-alber">LinkedIn Profile</a></li>
+              <li><a href="https://github.com/mandyalber">GitHub Profile</a></li>
+              <li><a href="mailto:mandy.alber@gmail.com">Email Me</a></li>
+            </ol>       
+          </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173333.38116261098!2d-122.59725117555645!3d47.24917022292158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549054ee2b659567%3A0x62219c07ebb09e82!2sTacoma%2C%20WA!5e0!3m2!1sen!2sus!4v1596738650611!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+        <h4><a href="#top">Back to top</a></h4><!-- this link returns to the top of the screen --> 
+      </section>
+
+    </main>
+
+    <footer>
+      <p class="hdrftr">Page created by Amanda Alber</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
