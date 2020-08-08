@@ -3,7 +3,7 @@
 /*header and footer styles */
 header, footer {
   padding:  20px;
-  background-color: #6c757d; 
+  background-color: #343a40; 
   text-align: center;
 }
 
@@ -91,7 +91,7 @@ button {
   font-size: 16px;
   padding: 10px;
   border-radius: 5px; 
-  background-color: #6c757d;
+  background-color: #343a40;
   border: none;
   color: #dee2e6;
 }
