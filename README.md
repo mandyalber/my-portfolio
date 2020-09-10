@@ -1,2 +1,4 @@
-# portfolio3
-This portfolio is updated with responsive styles, responsive navigation and a contact form
+# Portfolio Site
+
+This is my portfolio site to showcase my skills and projects
+
