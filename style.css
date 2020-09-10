@@ -101,8 +101,7 @@ button {
 .group {
   margin: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: center;  
+  flex-direction: column;  
 }
 
 .item {  
@@ -131,11 +130,11 @@ header nav ul {
 @media all and (min-width: 800px) {
 
   .group {
-    flex-direction: row;
+    flex-flow: row wrap;
   }
 
   main {
-    padding: 10% 25%;
+    padding: 10% 20%;
   } 
 
 }
