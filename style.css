@@ -1,18 +1,33 @@
-/*Main CSS Styles*/
-body {
-  max-width: 100vh;
+* {
+  box-sizing: border-box;  
 }
 
+html, body{    
+  height: 100%;
+}
 
-/*header and footer styles */
+body{
+  max-width: 100vw;
+  background-color: #343a40; 
+}
+
 header {
   font-family: 'Consolas','Monaco','Andale Mono','Ubuntu Mono',monospace;
+  font-size: 20px;  
   color: #dee2e6; 
-  background-color: #343a40; 
+  background-color: #343a40;   
   border-bottom: 3px solid teal;
+
+}
+
+header h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+
 }
 
 header nav ul {
+  float: right;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -27,9 +42,12 @@ header nav ul {
 a.navlinks:link {color:#dee2e6; }
 a.navlinks:hover {color:#212529; }
 
-h1 {
-  font-size: 40px;
-  text-transform: uppercase;
+
+main {    
+  max-width: 850px;
+  min-height: 600px;
+  margin: 50px auto 50px;
+  flex: 1 0 auto;
 }
 
 footer {
@@ -44,29 +62,24 @@ footer {
   width: 100%;
 }
 
-/*styles for main section of page*/
-section {
-  max-width: 900px;
-  margin: auto;
-}
-
 h2, h3, h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color:#495057 ;
+  color:#dee2e6 ;
 }
 
 h4 { 
   float: right;
 }
 
+
 p, li, form {
-  color: #212529;
+  color: #dee2e6;
   font-size: 16px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  font-family: 'Garamond', sans-serif;  
 }
 
 ul {
-  padding:0;
+  padding: 0;
   margin: 0;
 }
 
@@ -74,10 +87,10 @@ li {
   padding: 5px;
 }
 
+/*code formats*/
 pre {
   font-size: 11px;
   white-space: pre-wrap;
-  word-break: break-all;
   margin-top: 50px;
   border-radius: 5px;
   color: #fff;
@@ -87,7 +100,7 @@ pre {
 
 code {
   display: block;
-  max-width: 500px;
+  max-width: 800px;
 }
 
 .const {color: #2c6be9;}
@@ -96,18 +109,17 @@ code {
 .method {color:#ffe19f;}
 .key {color:#7bb9e9;}
 
-
-
-
 img.portrait {
-  border-radius: 50%;
+  border-radius: 5%;
+  border: 1px solid black;
   height: 300px;
   width: 205px;
   float: right;
 }
 
 img {
-  width: 100%;
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
 }
 
@@ -178,8 +190,10 @@ button {
   .group {
     flex-flow: row wrap;
   }
-  main{
-    padding: 0 5%;
+
+  pre {
+    font-size: 16px;
+
   }
 
-}
+}*/
