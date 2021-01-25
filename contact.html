@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Amanda's Portfolio Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>    
+
+    <header id="top" class="group"><!-- assigns id to be used in anchor link -->
+      <div class="item">
+        <h1 class="hdrftr">Amanda Alber</h1> 
+      </div>
+      <div class="item">   
+        <!--Use Responsive Navigation-->    
+        <nav>
+          <ul> <!-- links to each section below -->
+            <li><a href="/index.html" class="navlinks"><i>Intro</i></a></li> 
+            <li><a href="/about.html" class="navlinks"><i>About</i></a></li>
+            <li><a href="/projects.html" class="navlinks"><i>Projects</i></a></li>
+            <li><a href="/contact.html" class="navlinks"><i>Contact</i></a></li>
+          </ul>
+        </nav>
+      </div>    
+    </header>  
+
+    <main> 
+      <!-- contact me and location section -->
+      <section id="contact" > 
+        <div class="group">
+          <div class="item">
+             <!-- functional contact form -->
+            <form action="https://formspree.io/mandy.alber@gmail.com" method="post">
+              <fieldset>
+                <legend>Contact Form</legend>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" required/>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required/>
+                <label for="message">Message:</label>
+                <textarea id="message" name="name" maxlength="500" required></textarea>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+              </fieldset>
+            </form>       
+          </div>          
+          <div class="item ">
+            <h2>Other Ways to Contact Me</h2>
+            <ol>
+              <li><a href="http://www.linkedin.com/in/amanda-alber">LinkedIn Profile</a></li>
+              <li><a href="https://github.com/mandyalber">GitHub Profile</a></li>
+              <li><a href="mailto:mandy.alber@gmail.com">Email Me</a></li>
+            </ol>       
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <p class="hdrftr">Page created by Amanda Alber</p>
+    </footer>
+   
+  </body>
+</html>

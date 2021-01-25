@@ -1,159 +1,69 @@
 <!DOCTYPE html>
-<html lang="en"> 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Amanda's Portfolio Page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+<html lang="en">
 
-  <body>    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Amanda's Portfolio Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-    <header id="top" class="group"><!-- assigns id to be used in anchor link -->
-      <div class="item">
-        <h1 class="hdrftr">Amanda Alber</h1> 
-      </div>
-      <div class="item">   
-        <!--Use Responsive Navigation-->    
-        <nav class="hdrftr">
-          <ul> <!-- assigns class to be used in styling elements -->
-            <li><a href="#intro" class="hdrftr"><i>Intro</i></a></li> <!-- links to each section below -->
-            <li><a href="#about" class="hdrftr"><i>About</i></a></li>
-            <li><a href="#projects" class="hdrftr"><i>Projects</i></a></li>
-            <li><a href="#contact" class="hdrftr"><i>Contact</i></a></li>
-          </ul>
-        </nav>
-      </div>    
-    </header>  
-
-    <main>          
-      <!-- introduction section -->
-      <section id="intro">
-        <div class="group"> 
-          <div class="item">
-            <img src="images/mandy.jpg" alt="photo of mandy"/> 
-          </div>  
-          <div class="item">
-            <h2>Hi! I'm Amanda Alber</h2>
-            <p>I am an aspiring software developer currently learning at Thinkful Coding Bootcamp. I'm located in Tacoma, Washington (about 40 minutes south of Seattle).</p>
-            <p>As a former accountant and data professional, I enjoy: </p>
-            <ul>
-              <li>Solving problems and puzzles</li>
-              <li>Improving efficiency</li>
-              <li>Automating repetitive tasks</li>
-            </ul>      
-            <p>What can I help you create?</p>   
-          </div>
-        </div>
-        <h4><a href="#top">Back to top</a></h4><!-- this link returns to the top of the screen -->
-      </section>
-         
-      <!-- horizonal rule to break up each section -->
-      <hr>
-
-      <!-- about me section -->
-      <section id="about"> 
-        <div class="group">
-          <div class="item">
-            <h2>About Me</h2>
-            <p>I began my journey into coding when I was looking to find a job that wouldn't leave me watching the clock all day. While I enjoyed my roles as an accounting professional and a data specialist, I was searching for something that would allow me more flexibility, autonomy and the opportunity to continually learn new things.</p>
-            <p>After dabbling online and then taking a few college classes, I was hooked! As a Thinkful student, I am reaping the benefits of collaborating with a mentor and other students to propel me to my next career.</p> 
-            <p>I have a Web Programming Certificate that demonstrates my experience with HTML, CSS and JavaScript, as well as exposure to Java, C++, PHP, SQL and Joomla! CMS (Content Management System). I am continually learning new things and look forward to creating quality projects.</p>              
-            <h3>Services I would like to provide:</h3>
-            <ol>
-              <li>Front-End Website Developement</li>
-              <li>Back-End Website Developement</li>
-              <li>Website Maintenance</li> 
-              <li>Third-Party Integration & Customization</li>
-              <li>Web Portal Development</li>
-            </ol>    
-            <p>Outside of development, I spend my time playing with my two sons, taking long walks outdoors and reading books about self-improvement, psychology and sociology.</p>  
-          </div>
-        </div> 
-        <h4><a href="#top">Back to top</a></h4>
-      </section>       
-    
-    <hr>
-
-      <!-- my projects/portfolio section -->
-      <section id="projects">
-        <div class="group">
-          <div class ="item">
-            <img src="images/sagasu-app-screenshot.png" alt="sagasu-app-screenshot"/>
-            <h3>Sagasu</h3>
-            <p>This app allows you to search a topic and get results from both YouTube and Wikipedia</p>
-            <p>Skills used: HTML, CSS, JavaScript & jQuery</p>
-            <p><a href="https://github.com/mandyalber/sagasu-app" target="_blank">Link to project GitHub repo</a></p>
-            <p><a href="https://mandyalber.github.io/sagasu-app/" target="_blank">Link to live, working app</a></p>
-          </div>   
-          <div class ="item">
-            <img src="images/quiz-app-screenshot.png" alt="quiz-app-screenshot"/>
-            <h3>Quiz App</h3>
-            <p>This app takes you through a 5 question quiz on baby sleep</p>
-            <p>Skills used: HTML, CSS JavaScript & jQuery</p>
-            <p><a href="https://github.com/mandyalber/quiz-app" target="_blank">Link to project GitHub repo</a></p>
-            <p><a href="https://mandyalber.github.io/quiz-app/" target="_blank">Link to live, working app</a></p>
-          </div>                
-          <div class ="item">
-            <img src="images/placeholder.png" alt="screenshot"/>
-            <h3>Email Form</h3>
-            <p>This page receives your name, email and a message and sends it through Formspree. </p>
-            <p>Skills used: HTML, CSS</p>
-            <p><a href="https://github.com/mandyalber/email-form-practice" target="_blank">Link to project GitHub repo</a></p>
-            <p><a href="https://mandyalber.github.io/email-form-practice/" target="_blank">Link to live, working app</a></p>
-          </div>
-          <div class ="item">
-            <img src="images/placeholder.png" alt="screenshot"/>
-            <h3>Sample Project</h3>
-            <p>This is a placeholder for my next cool project! </p>
-            <p>Skills used: HTML, CSS, JavaScript, maybe React?</p>
-            <p><a href="#" target="_blank">Link to project GitHub repo</a></p>
-            <p><a href="#" target="_blank">Link to live, working app</a></p>
-          </div>
-        </div>  
-        <h4><a href="#top">Back to top</a></h4>      
-      </section>
+<body  class="index">
+  <header id="top" class="group">
+    <!-- assigns id to be used in anchor link -->
+    <div class="item">
+      <h1 class="hdrftr">Amanda Alber</h1>
+    </div>
+    <div class="item">
+      <nav>
+        <ul>
+          <!-- links to each section below -->
+          <li><a href="/index.html" class="navlinks"><i>Intro</i></a></li>
+          <li><a href="/about.html" class="navlinks"><i>About</i></a></li>
+          <li><a href="/projects.html" class="navlinks"><i>Projects</i></a></li>
+          <li><a href="/contact.html" class="navlinks"><i>Contact</i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- introduction section -->
+    <section id="intro" > 
+      <pre>
+      <code class="animate__animated animate__fadeIn">
+        <span class="const">const </span><span class="var">mandyAlber </span>= {
+          <span class="key">title: </span><span class="string">'Full Stack Software Developer'</span>,
+          <span class="key">front_end_skills: </span>[
+            <span class="string">'JavaScript'</span>,
+            <span class="string">'React.js'</span>,
+            <span class="string">'jQuery'</span>,
+            <span class="string">'HTML5'</span>,
+            <span class="string">'CSS3'</span>
+          ],
+          <span class="key">back_end_skills: </span>[
+            <span class="string">'Node.js'</span>,
+            <span class="string">'Express.js'</span>,
+            <span class="string">'PostgreSQL'</span>
+          ],
+          <span class="key">enjoys: </span>[
+            <span class="string">'solving problems and puzzles'</span>,
+            <span class="string">'improving efficiency'</span>,
+            <span class="string">'automating repetitive tasks'</span>
+          ]
+      }
       
-      <hr>
+      <span class="key">console</span><span class="method">.log</span>(
+        <span class="string">`Hi, I am a </span><span class="var">${mandyAlber</span><span class="key">.title</span><span class="var">}</span><span class="string">.</span><span class="string">I have Front-End experience in </span><span class="var">${mandyAlber</span><span class="key">.front_end_skills</span><span class="var">}</span><span class="string">and Back-End experience in </span><span class="var">${mandyAlber</span><span class="key">.back_end_skills</span><span class="var">}</span>.<span class="string"> I enjoy </span><span class="var">${mandyAlber</span><span class="key">.enjoys</span><span class="var">}</span><span class="string">. Welcome to my portfolio site!`</span>
+      )
+      </code>
+    </pre>
+    </section>
+  </main>
+  <footer>
+    <p class="hdrftr">Page created by Amanda Alber</p>
+  </footer>
+</body>
 
-      <!-- contact me and location section -->
-      <section id="contact" > 
-        <div class="group">
-          <div class="item">
-             <!-- functional contact form -->
-            <form action="https://formspree.io/mandy.alber@gmail.com" method="post">
-              <fieldset>
-                <legend>Contact Form</legend>
-                <label for="name">Name:</label>
-                <input id="name" type="text" name="name" required/>
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="email" required/>
-                <label for="message">Message:</label>
-                <textarea id="message" name="name" maxlength="500" required></textarea>
-                <button type="submit">Submit</button>
-                <button type="reset">Clear</button>
-              </fieldset>
-            </form>       
-          </div>          
-          <div class="item ">
-            <h2>Other Ways to Contact Me</h2>
-            <ol>
-              <li><a href="http://www.linkedin.com/in/amanda-alber">LinkedIn Profile</a></li>
-              <li><a href="https://github.com/mandyalber">GitHub Profile</a></li>
-              <li><a href="mailto:mandy.alber@gmail.com">Email Me</a></li>
-            </ol>       
-          </div>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173333.38116261098!2d-122.59725117555645!3d47.24917022292158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549054ee2b659567%3A0x62219c07ebb09e82!2sTacoma%2C%20WA!5e0!3m2!1sen!2sus!4v1596738650611!5m2!1sen!2sus" width="600" height="450"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
-        <h4><a href="#top">Back to top</a></h4><!-- this link returns to the top of the screen --> 
-      </section>
-
-    </main>
-
-    <footer>
-      <p class="hdrftr">Page created by Amanda Alber</p>
-    </footer>
-   
-  </body>
 </html>
