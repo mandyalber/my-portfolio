@@ -42,7 +42,9 @@ header nav ul {
 
 a.navlinks:link {color:#dee2e6; }
 a.navlinks:hover {color:#212529; }
-
+.active {
+  border-bottom: 3px solid teal;;
+}
 
 main {    
   max-width: 850px;
@@ -55,13 +57,14 @@ footer {
   background-color: #212529; 
   padding: 15px;
   color: #dee2e6; 
-
   left: 0;
   bottom: 0;
   width: 100%;
+  border-top: 3px solid teal;
 }
 
 footer p {
+    font-size: 14px;
     font-family: 'Consolas','Monaco','Andale Mono','Ubuntu Mono',monospace;
 }
 
@@ -77,7 +80,7 @@ h4 {
 
 p, li, form {
   color: #dee2e6;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Garamond', sans-serif;  
 }
 
@@ -114,15 +117,14 @@ code {
 
 img.portrait {
   border-radius: 5%;
-  border: 1px solid black;
+  box-shadow: 5px 5px 8px rgb(31, 30, 30);
   height: 300px;
   width: 205px;
   float: right;
 }
 
 img {
-  width: 400px;
-  height: 300px;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -206,9 +208,14 @@ button {
     flex-flow: row wrap;
   }
 
-  pre {
-    font-size: 16px;
-
+  img {
+    max-width: 400px;
+    width: 400px;
+    height: 300px;
   }
 
-}*/
+  pre {
+    font-size: 16px;
+  }
+
+}
