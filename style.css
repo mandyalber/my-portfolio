@@ -10,12 +10,13 @@ html, body{
 
 body {
   max-width: 100vw;
+  max-height: 100vh;
   background-color: #343a40; 
   padding-bottom:60px;   /* Height of the footer */
 }
 
 .container {
-  min-height:100%;
+  height:100%;
   position:relative;
 }
 
@@ -25,7 +26,7 @@ header {
   color: #dee2e6; 
   background-color: #212529;   
   border-bottom: 3px solid teal;
-
+  text-align: center;
 }
 
 .heading {
@@ -36,7 +37,6 @@ header {
 }
 
 header nav ul {
-  float: right;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -49,30 +49,30 @@ header nav ul {
 }
 
 a.navlinks:link {color:#dee2e6; }
-a.navlinks:hover {color:#212529; }
-.active {
+a.navlinks:hover {color:teal; }
+
+.current {
   border-bottom: 3px solid teal;;
 }
 
 main {    
-  min-height:90%;
   max-width: 850px;
-  margin: 50px auto 100px;
+  margin: 10px;
   flex: 1 0 auto;
 }
 
 footer {
-  text-align: center;
   background-color: #212529; 
-  padding: 15px;
+  padding: 10px;
   color: #dee2e6; 
-  position:relative;
-   bottom:0;
+  position: relative;
+  bottom:0;
   width: 100%;
   border-top: 3px solid teal;
 }
 
 footer p {
+    text-align: center;
     font-size: 14px;
     font-family: 'Consolas','Monaco','Andale Mono','Ubuntu Mono',monospace;
 }
@@ -85,7 +85,6 @@ h2, h3, h4 {
 h4 { 
   float: right;
 }
-
 
 p, li, form {
   color: #dee2e6;
@@ -104,8 +103,8 @@ li {
 
 /*code formats*/
 pre {
-  font-size: 11px;
-  white-space: pre-wrap;
+  font-size: 10px;
+
   margin-top: 50px;
   border-radius: 5px;
   color: #fff;
@@ -113,7 +112,7 @@ pre {
   background-color: #1e1e1e;
 }
 
-code {
+code {  white-space: pre-wrap;
   display: block;
   max-width: 800px;
 }
@@ -166,8 +165,7 @@ form textarea {
   margin-bottom: 3%;
   width: 100%;
   background-color:  #ebeef1;
-  border-radius: 5px;
-  
+  border-radius: 5px;  
 }
 
 .contact {  
@@ -180,6 +178,7 @@ form textarea {
   font-size: 20px;
   text-decoration: none;
 }
+
 .contact li a:hover {color:#525b64;}
 
 button {
@@ -212,6 +211,18 @@ button {
 /*responsive styles (Desktop)*/
 
 @media all and (min-width: 800px) {
+
+  header {
+    text-align: left;
+  }
+
+  header nav ul{
+    float: right;
+  }
+
+  main{
+    margin: 50px auto 100px;
+  }
 
   .group {
     flex-flow: row wrap;
